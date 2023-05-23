@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax Anfang</title>
+    <script defer src="js/ajaxAnfragePOST.js"></script>
+</head>
+<body>
+<!--
+Aufgabe: Der User soll eine vermeintliche Programmiersprache in dem Textfeld eingeben
+auf Knopfdruck soll per ajax an ajaxPOST.php eine Anfrage gesendet werden.
+Je nachdem, ob diese Programmiersprache im vorgegebenen Array vorkommt, soll
+ja oder nein in der indexPOST.html angezeigt werden.
+-->
+<!--
+@todo
+userinput auslesen
+userinput bei Anfrage als POST-Variable mitschicken
+den Wert dieser POST-Variable auslesen
+überprüfen, ob der Wert in dem Array 4programmiersprachen vorkommt
+Fallunterscheidung: ja bzw. nein an Browser senden
+den empfangenen responseText in das div mit der id="demo" schreiben
+den Erfolg geniessen!
+-->
+<div id="demo"></div>
+Ist das eine Programmiersprache?
+<input type="text" name="programmiersprache" id="programmiersprache">
+<button onclick="loadDoc()">Anfrage</button>
+</body>
+</html>
