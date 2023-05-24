@@ -7,5 +7,7 @@ function loadDoc() {
     };
     xhttp.open("POST", "ajaxPOST.php");
     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    xhttp.send( `userinput=${document.getElementById("programmiersprache").value}`);
+    xhttp.send(`userinput=${document.getElementById("programmiersprache").value}`);
 }
+
+console.log(userinput)

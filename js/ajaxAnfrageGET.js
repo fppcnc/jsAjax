@@ -11,3 +11,4 @@ function loadDoc() {
 
 //Serverantwort als Textzeichenfolge: responseText
 document.getElementById("demo").innerHTML = xhttp.responseText;
+
