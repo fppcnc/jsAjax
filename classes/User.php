@@ -1,5 +1,5 @@
 <?php
-class User
+class User implements JsonSerializable
 {
 private string $name;
 private int $time;
@@ -14,5 +14,10 @@ private int $time;
         $this->time = $time;
     }
 
+    // give all Attributes
+    // implements JsonSerializable
+    public function jsonSerialize() {
+        return ['name' => $this->name, 'time' => $this->time];
+    }
 
 }
